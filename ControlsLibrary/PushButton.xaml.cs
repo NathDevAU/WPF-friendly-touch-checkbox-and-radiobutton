@@ -1,12 +1,11 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 
-namespace SimpleStyles
+namespace TouchFriendlyControls
 {
-    // This copy of the class is kept here for the sake of avoiding conflicts
-
-    public delegate void PressedChangedEventHandler(object sender, bool IsPressed);
+    public delegate void PressedChangedEventHandler(object sender, bool isPressed);
 
     public partial class PushButton : Button
     {

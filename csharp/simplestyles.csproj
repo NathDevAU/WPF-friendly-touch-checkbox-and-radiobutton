@@ -58,8 +58,8 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="PushButton.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Resources\Shared.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -79,6 +79,12 @@
     <Compile Include="TouchFriendlyWindow.xaml.cs">
       <DependentUpon>TouchFriendlyWindow.xaml</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ControlsLibrary\TouchFriendlyControls.csproj">
+      <Project>{a8fe9392-5fce-4c55-98c6-c372c1d14ea4}</Project>
+      <Name>TouchFriendlyControls</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

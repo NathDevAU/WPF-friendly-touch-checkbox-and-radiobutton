@@ -26,7 +26,7 @@ namespace SimpleStyles
             t.Interval = TimeSpan.FromMilliseconds(3000);
             t.Tick += (s, e) =>
             {
-                MessageBox.Show("Hello world!");
+                MessageBox.Show("Hello world! -> Long Tap");
                 t.Stop();
             };
         }
